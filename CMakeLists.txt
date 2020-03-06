@@ -9,6 +9,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(main main.cpp)
 
-#add_library()
+add_library(directorylist directorylist.h directorylist.cpp)
 
-#target_link_libraries()
+target_link_libraries(main directorylist)
